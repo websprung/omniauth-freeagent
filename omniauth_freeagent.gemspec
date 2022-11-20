@@ -3,7 +3,7 @@
 require_relative "lib/omniauth_freeagent/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "omniauth-freeagent"
+  spec.name = "omniauth_freeagent"
   spec.version = OmniauthFreeagent::VERSION
   spec.authors = ["David Georgiou"]
   spec.email = ["david.georgiou@icloud.com"]
