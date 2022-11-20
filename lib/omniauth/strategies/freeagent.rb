@@ -40,4 +40,4 @@ module OmniAuth
   end
 end
 
-OmniAuth.config.add_camelization "freeagent", "FreeAgent"
+OmniAuth.config.add_camelization "freeagent", "Freeagent"

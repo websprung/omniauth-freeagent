@@ -12,4 +12,4 @@ Style/Documentation:
   Exclude:
     - 'spec/**/*'
     - 'test/**/*'
-    - 'lib/omni_auth/strategies/freeagent.rb'
+    - 'lib/omniauth/strategies/freeagent.rb'
