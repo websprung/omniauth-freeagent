@@ -8,10 +8,11 @@ module OmniAuth
       option :name, "freeagent"
 
       option :client_options, {
-        site: "https://api.freeagent.com",
+        site: ENV['RAILS_ENV'] == 'development' ? "https://api.sandbox.freeagent.com" : "https://api.freeagent.com",
         authorize_url: "/v2/approve_app",
         token_url: "/v2/token_endpoint",
-        callback_path: "/auth/freeagent/callback"
+        callback_path: "users/auth/freeagent/callback",
+        redirect_uri: "http://signontheline.test:5100/users/auth/freeagent/callback"
       }
 
       uid do
