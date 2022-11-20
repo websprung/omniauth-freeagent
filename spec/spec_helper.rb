@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 require "omniauth_freeagent"
-require 'rspec'
-require 'byebug'
+require "rspec"
+require "byebug"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
@@ -15,5 +15,5 @@ RSpec.configure do |config|
     c.syntax = :expect
   end
 
-  config.extend  OmniAuth::Test::StrategyMacros, :type => :strategy
+  config.extend OmniAuth::Test::StrategyMacros, type: :strategy
 end
